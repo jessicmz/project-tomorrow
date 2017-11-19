@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OpenEndedResponses" targetNamespace="http://tempuri.org/OpenEndedResponses.xsd" xmlns:mstns="http://tempuri.org/OpenEndedResponses.xsd" xmlns="http://tempuri.org/OpenEndedResponses.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OpenEndedResponses" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="OpenEndedResponses" msprop:Generator_UserDSName="OpenEndedResponses">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Students" msprop:Generator_UserTableName="Students" msprop:Generator_RowEvArgName="StudentsRowChangeEvent" msprop:Generator_TableVarName="tableStudents" msprop:Generator_TablePropName="Students" msprop:Generator_RowDeletingName="StudentsRowDeleting" msprop:Generator_RowChangingName="StudentsRowChanging" msprop:Generator_RowDeletedName="StudentsRowDeleted" msprop:Generator_RowEvHandlerName="StudentsRowChangeEventHandler" msprop:Generator_TableClassName="StudentsDataTable" msprop:Generator_RowChangedName="StudentsRowChanged" msprop:Generator_RowClassName="StudentsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" msprop:Generator_UserColumnName="State" type="xs:string" minOccurs="0" />
+              <xs:element name="District_Id" msprop:Generator_ColumnVarNameInTable="columnDistrict_Id" msprop:Generator_ColumnPropNameInRow="District_Id" msprop:Generator_ColumnPropNameInTable="District_IdColumn" msprop:Generator_UserColumnName="District_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="District_Name" msprop:Generator_ColumnVarNameInTable="columnDistrict_Name" msprop:Generator_ColumnPropNameInRow="District_Name" msprop:Generator_ColumnPropNameInTable="District_NameColumn" msprop:Generator_UserColumnName="District_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="School_Id" msprop:Generator_ColumnVarNameInTable="columnSchool_Id" msprop:Generator_ColumnPropNameInRow="School_Id" msprop:Generator_ColumnPropNameInTable="School_IdColumn" msprop:Generator_UserColumnName="School_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="School_Name" msprop:Generator_ColumnVarNameInTable="columnSchool_Name" msprop:Generator_ColumnPropNameInRow="School_Name" msprop:Generator_ColumnPropNameInTable="School_NameColumn" msprop:Generator_UserColumnName="School_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Taken_Survey_Id" msprop:Generator_ColumnVarNameInTable="columnTaken_Survey_Id" msprop:Generator_ColumnPropNameInRow="Taken_Survey_Id" msprop:Generator_ColumnPropNameInTable="Taken_Survey_IdColumn" msprop:Generator_UserColumnName="Taken_Survey_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Survey_Id" msprop:Generator_ColumnVarNameInTable="columnSurvey_Id" msprop:Generator_ColumnPropNameInRow="Survey_Id" msprop:Generator_ColumnPropNameInTable="Survey_IdColumn" msprop:Generator_UserColumnName="Survey_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Survey_Name" msprop:Generator_ColumnVarNameInTable="columnSurvey_Name" msprop:Generator_ColumnPropNameInRow="Survey_Name" msprop:Generator_ColumnPropNameInTable="Survey_NameColumn" msprop:Generator_UserColumnName="Survey_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Question_Id" msprop:Generator_ColumnVarNameInTable="columnQuestion_Id" msprop:Generator_ColumnPropNameInRow="Question_Id" msprop:Generator_ColumnPropNameInTable="Question_IdColumn" msprop:Generator_UserColumnName="Question_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Question_Text" msprop:Generator_ColumnVarNameInTable="columnQuestion_Text" msprop:Generator_ColumnPropNameInRow="Question_Text" msprop:Generator_ColumnPropNameInTable="Question_TextColumn" msprop:Generator_UserColumnName="Question_Text" type="xs:string" minOccurs="0" />
+              <xs:element name="Response" msprop:Generator_ColumnVarNameInTable="columnResponse" msprop:Generator_ColumnPropNameInRow="Response" msprop:Generator_ColumnPropNameInTable="ResponseColumn" msprop:Generator_UserColumnName="Response" type="xs:string" minOccurs="0" />
+              <xs:element name="Grade" msprop:Generator_ColumnVarNameInTable="columnGrade" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_UserColumnName="Grade" type="xs:string" minOccurs="0" />
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender" type="xs:string" minOccurs="0" />
+              <xs:element name="Position" msprop:Generator_ColumnVarNameInTable="columnPosition" msprop:Generator_ColumnPropNameInRow="Position" msprop:Generator_ColumnPropNameInTable="PositionColumn" msprop:Generator_UserColumnName="Position" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Parents" msprop:Generator_UserTableName="Parents" msprop:Generator_RowEvArgName="ParentsRowChangeEvent" msprop:Generator_TableVarName="tableParents" msprop:Generator_TablePropName="Parents" msprop:Generator_RowDeletingName="ParentsRowDeleting" msprop:Generator_RowChangingName="ParentsRowChanging" msprop:Generator_RowDeletedName="ParentsRowDeleted" msprop:Generator_RowEvHandlerName="ParentsRowChangeEventHandler" msprop:Generator_TableClassName="ParentsDataTable" msprop:Generator_RowChangedName="ParentsRowChanged" msprop:Generator_RowClassName="ParentsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" msprop:Generator_UserColumnName="State" type="xs:string" minOccurs="0" />
+              <xs:element name="District_Id" msprop:Generator_ColumnVarNameInTable="columnDistrict_Id" msprop:Generator_ColumnPropNameInRow="District_Id" msprop:Generator_ColumnPropNameInTable="District_IdColumn" msprop:Generator_UserColumnName="District_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="District_Name" msprop:Generator_ColumnVarNameInTable="columnDistrict_Name" msprop:Generator_ColumnPropNameInRow="District_Name" msprop:Generator_ColumnPropNameInTable="District_NameColumn" msprop:Generator_UserColumnName="District_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="School_Id" msprop:Generator_ColumnVarNameInTable="columnSchool_Id" msprop:Generator_ColumnPropNameInRow="School_Id" msprop:Generator_ColumnPropNameInTable="School_IdColumn" msprop:Generator_UserColumnName="School_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="School_Name" msprop:Generator_ColumnVarNameInTable="columnSchool_Name" msprop:Generator_ColumnPropNameInRow="School_Name" msprop:Generator_ColumnPropNameInTable="School_NameColumn" msprop:Generator_UserColumnName="School_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Taken_Survey_Id" msprop:Generator_ColumnVarNameInTable="columnTaken_Survey_Id" msprop:Generator_ColumnPropNameInRow="Taken_Survey_Id" msprop:Generator_ColumnPropNameInTable="Taken_Survey_IdColumn" msprop:Generator_UserColumnName="Taken_Survey_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Survey_Id" msprop:Generator_ColumnVarNameInTable="columnSurvey_Id" msprop:Generator_ColumnPropNameInRow="Survey_Id" msprop:Generator_ColumnPropNameInTable="Survey_IdColumn" msprop:Generator_UserColumnName="Survey_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Survey_Name" msprop:Generator_ColumnVarNameInTable="columnSurvey_Name" msprop:Generator_ColumnPropNameInRow="Survey_Name" msprop:Generator_ColumnPropNameInTable="Survey_NameColumn" msprop:Generator_UserColumnName="Survey_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Question_Id" msprop:Generator_ColumnVarNameInTable="columnQuestion_Id" msprop:Generator_ColumnPropNameInRow="Question_Id" msprop:Generator_ColumnPropNameInTable="Question_IdColumn" msprop:Generator_UserColumnName="Question_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Question_Text" msprop:Generator_ColumnVarNameInTable="columnQuestion_Text" msprop:Generator_ColumnPropNameInRow="Question_Text" msprop:Generator_ColumnPropNameInTable="Question_TextColumn" msprop:Generator_UserColumnName="Question_Text" type="xs:string" minOccurs="0" />
+              <xs:element name="Response" msprop:Generator_ColumnVarNameInTable="columnResponse" msprop:Generator_ColumnPropNameInRow="Response" msprop:Generator_ColumnPropNameInTable="ResponseColumn" msprop:Generator_UserColumnName="Response" type="xs:string" minOccurs="0" />
+              <xs:element name="Grade" msprop:Generator_ColumnVarNameInTable="columnGrade" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_UserColumnName="Grade" type="xs:string" minOccurs="0" />
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender" type="xs:string" minOccurs="0" />
+              <xs:element name="Position" msprop:Generator_ColumnVarNameInTable="columnPosition" msprop:Generator_ColumnPropNameInRow="Position" msprop:Generator_ColumnPropNameInTable="PositionColumn" msprop:Generator_UserColumnName="Position" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Administrators" msprop:Generator_UserTableName="Administrators" msprop:Generator_RowEvArgName="AdministratorsRowChangeEvent" msprop:Generator_TableVarName="tableAdministrators" msprop:Generator_TablePropName="Administrators" msprop:Generator_RowDeletingName="AdministratorsRowDeleting" msprop:Generator_RowChangingName="AdministratorsRowChanging" msprop:Generator_RowDeletedName="AdministratorsRowDeleted" msprop:Generator_RowEvHandlerName="AdministratorsRowChangeEventHandler" msprop:Generator_TableClassName="AdministratorsDataTable" msprop:Generator_RowChangedName="AdministratorsRowChanged" msprop:Generator_RowClassName="AdministratorsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" msprop:Generator_UserColumnName="State" type="xs:string" minOccurs="0" />
+              <xs:element name="District_Id" msprop:Generator_ColumnVarNameInTable="columnDistrict_Id" msprop:Generator_ColumnPropNameInRow="District_Id" msprop:Generator_ColumnPropNameInTable="District_IdColumn" msprop:Generator_UserColumnName="District_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="District_Name" msprop:Generator_ColumnVarNameInTable="columnDistrict_Name" msprop:Generator_ColumnPropNameInRow="District_Name" msprop:Generator_ColumnPropNameInTable="District_NameColumn" msprop:Generator_UserColumnName="District_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="School_Id" msprop:Generator_ColumnVarNameInTable="columnSchool_Id" msprop:Generator_ColumnPropNameInRow="School_Id" msprop:Generator_ColumnPropNameInTable="School_IdColumn" msprop:Generator_UserColumnName="School_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="School_Name" msprop:Generator_ColumnVarNameInTable="columnSchool_Name" msprop:Generator_ColumnPropNameInRow="School_Name" msprop:Generator_ColumnPropNameInTable="School_NameColumn" msprop:Generator_UserColumnName="School_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Taken_Survey_Id" msprop:Generator_ColumnVarNameInTable="columnTaken_Survey_Id" msprop:Generator_ColumnPropNameInRow="Taken_Survey_Id" msprop:Generator_ColumnPropNameInTable="Taken_Survey_IdColumn" msprop:Generator_UserColumnName="Taken_Survey_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Survey_Id" msprop:Generator_ColumnVarNameInTable="columnSurvey_Id" msprop:Generator_ColumnPropNameInRow="Survey_Id" msprop:Generator_ColumnPropNameInTable="Survey_IdColumn" msprop:Generator_UserColumnName="Survey_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Survey_Name" msprop:Generator_ColumnVarNameInTable="columnSurvey_Name" msprop:Generator_ColumnPropNameInRow="Survey_Name" msprop:Generator_ColumnPropNameInTable="Survey_NameColumn" msprop:Generator_UserColumnName="Survey_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Question_Id" msprop:Generator_ColumnVarNameInTable="columnQuestion_Id" msprop:Generator_ColumnPropNameInRow="Question_Id" msprop:Generator_ColumnPropNameInTable="Question_IdColumn" msprop:Generator_UserColumnName="Question_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Question_Text" msprop:Generator_ColumnVarNameInTable="columnQuestion_Text" msprop:Generator_ColumnPropNameInRow="Question_Text" msprop:Generator_ColumnPropNameInTable="Question_TextColumn" msprop:Generator_UserColumnName="Question_Text" type="xs:string" minOccurs="0" />
+              <xs:element name="Response" msprop:Generator_ColumnVarNameInTable="columnResponse" msprop:Generator_ColumnPropNameInRow="Response" msprop:Generator_ColumnPropNameInTable="ResponseColumn" msprop:Generator_UserColumnName="Response" type="xs:string" minOccurs="0" />
+              <xs:element name="Grade" msprop:Generator_ColumnVarNameInTable="columnGrade" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_UserColumnName="Grade" type="xs:string" minOccurs="0" />
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender" type="xs:string" minOccurs="0" />
+              <xs:element name="Position" msdata:Caption="Gender" msprop:Generator_ColumnVarNameInTable="columnPosition" msprop:Generator_ColumnPropNameInRow="Position" msprop:Generator_ColumnPropNameInTable="PositionColumn" msprop:Generator_UserColumnName="Position" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
