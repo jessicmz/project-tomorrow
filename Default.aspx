@@ -35,86 +35,140 @@
                                 </ul>
                             </div>
                         </nav>
-                        <div class="page-header">
-                            <h1 class="dashboard">
-                                <asp:label ID="surveyname" runat="server" Text="Label"></asp:label>
+                        <div class="page-header pageHeader">
+                            <h1>
+                                <asp:Label ID="surveyname" runat="server" Text="Label"></asp:Label>
                                 <small>Dashboard</small></h1>
+                            <a href="#">Download Survey Data</a>
                         </div>
-                        <div class="metricsWrapper">
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body totalResponsesCss">
-                                            <p class="metricsLabel">Total Responses</p>
-                                            <asp:label ID="questionMetrics" CssClass="metricsCss" runat="server" Text="Label"></asp:label>
+                        <div class="contentBackground">
+                            <div class="contents">
+                                <div class="metricsWrapper">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <div class="panel panel-default">
+                                                <div class="panel-body totalResponsesCss">
+                                                    <p class="metricsLabel">Total Responses</p>
+                                                    <asp:Label ID="questionMetrics" CssClass="metricsCss" runat="server" Text="Label"></asp:Label>
+                                                </div>
+                                                <div class="panel-footer surveyLinkCss">
+                                                    <a href="url">link text</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="panel-footer surveyLinkCss">
-                                            <a href="url">link text</a>
+                                        <div class="col-sm-3">
+                                            <div class="panel panel-default">
+                                                <div class="panel-body totalQuestionsCss">
+                                                    <p class="metricsLabel"># of Questions</p>
+                                                    <asp:Label ID="Label1" CssClass="metricsCss" runat="server" Text="Label"></asp:Label>
+                                                </div>
+                                                <div class="panel-footer surveyLinkCss">
+                                                    <a href="url">link text</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="panel panel-default">
+                                                <div class="panel-body totalOpenQuestionsCss">
+                                                    <p class="metricsLabel">Total Responses</p>
+                                                    <asp:Label ID="Label2" CssClass="metricsCss" runat="server" Text="Label"></asp:Label>
+                                                </div>
+                                                <div class="panel-footer surveyLinkCss">
+                                                    <a href="url">link text</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="panel panel-default">
+                                                <div class="panel-body totalMetricCss">
+                                                    <p class="metricsLabel">Total Responses</p>
+                                                    <asp:Label ID="Label3" CssClass="metricsCss" runat="server" Text="Label"></asp:Label>
+                                                </div>
+                                                <div class="panel-footer surveyLinkCss">
+                                                    <a href="url">link text</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body totalQuestionsCss">
-                                            <p class="metricsLabel"># of Questions</p>
-                                            <asp:label ID="Label1" CssClass="metricsCss" runat="server" Text="Label"></asp:label>
+                                <div class="questionfilter">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">Questions</div>
+                                        <asp:DropDownList runat="server" ID="questionFilter" CssClass="form-control"></asp:DropDownList>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="graphWrapper">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">Panel heading without title</div>
+                                                <div class="panel-body">
+                                                    <asp:Chart ID="Chart1" runat="server">
+                                                        <Series>
+                                                            <asp:Series Name="Series1"></asp:Series>
+                                                        </Series>
+                                                        <ChartAreas>
+                                                            <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                                                        </ChartAreas>
+                                                    </asp:Chart>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="panel-footer surveyLinkCss">
-                                            <a href="url">link text</a>
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">Panel heading without title</div>
+                                                <div class="panel-body">
+                                                    <asp:Chart ID="Chart2" runat="server">
+                                                        <Series>
+                                                            <asp:Series Name="Series1"></asp:Series>
+                                                        </Series>
+                                                        <ChartAreas>
+                                                            <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                                                        </ChartAreas>
+                                                    </asp:Chart>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">Panel heading without title</div>
+                                                <div class="panel-body">
+                                                    <asp:Chart ID="Chart3" runat="server">
+                                                        <Series>
+                                                            <asp:Series Name="Series1"></asp:Series>
+                                                        </Series>
+                                                        <ChartAreas>
+                                                            <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                                                        </ChartAreas>
+                                                    </asp:Chart>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">Panel heading without title</div>
+                                                <div class="panel-body">
+                                                    <asp:Chart ID="Chart4" runat="server">
+                                                        <Series>
+                                                            <asp:Series Name="Series1"></asp:Series>
+                                                        </Series>
+                                                        <ChartAreas>
+                                                            <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                                                        </ChartAreas>
+                                                    </asp:Chart>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body totalOpenQuestionsCss">
-                                            <p class="metricsLabel">Total Responses</p>
-                                            <asp:label ID="Label2" CssClass="metricsCss" runat="server" Text="Label"></asp:label>
-                                        </div>
-                                        <div class="panel-footer surveyLinkCss">
-                                            <a href="url">link text</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body totalMetricCss">
-                                            <p class="metricsLabel">Total Responses</p>
-                                            <asp:label ID="Label3" CssClass="metricsCss" runat="server" Text="Label"></asp:label>
-                                        </div>
-                                        <div class="panel-footer surveyLinkCss">
-                                            <a href="url">link text</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="questionfilter">
-                            <div class="input-group">
-                                <div class="input-group-addon">Questions</div>
-                                <asp:DropDownList runat="server" ID="questionFilter" CssClass="form-control"></asp:DropDownList>
-                            </div>
-                        </div>
-                            <br>
-<%--                            <div class="row">
-                                <div class="col-sm-6">
-                                </div>
-                                <div class="col-sm-6"></div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-sm-6"></div>
-                                <div class="col-sm-6"></div>
-                            </div>--%>
-                            <asp:Chart ID="Chart1" runat="server">
-                                <Series>
-                                    <asp:Series Name="Series1"></asp:Series>
-                                </Series>
-                                <ChartAreas>
-                                    <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
-                                </ChartAreas>
-                            </asp:Chart>
-                        </div>
 
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-1"></div>
             </div>

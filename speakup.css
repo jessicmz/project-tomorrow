@@ -1,19 +1,41 @@
-﻿html, body {
-    height: 100vh;
+﻿html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
 }
 
 .wrapper {
     background-color: #A1C3D7;
+    height: 100%;
+    overflow: auto;
 }
 
 .col-sm-10 {
     background-color: white;
-    height: 100vh;
+    height: 100%;
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
+.contents {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 /*Panel Styling*/
+.metricsWrapper {
+    padding-top: 40px;
+}
+.page-header.pageHeader {
+    padding-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 .totalResponsesCss {
     background-image: none;
     background-color: #6FCF97;
@@ -37,15 +59,8 @@
     color: white;
 }
 
-div.metricsWrapper {
-    padding: 0 0 0 0;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
 div.panel-footer {
     border: none;
-
 }
 
 div.panel.panel-default{
@@ -54,16 +69,7 @@ div.panel.panel-default{
 }
 
 /*End Panel Styling*/
-.dashboard {
-    margin-left: 30px;
-}
 
-.questionfilter {
-    margin-left: 30px;
-    margin-right: 30px;
+.contentBackground {
+    background-color: #ededed;
 }
-
-.graphwrapper {
-    border: 1px solid black;
-}
-
