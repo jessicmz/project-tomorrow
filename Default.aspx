@@ -15,6 +15,7 @@
     <link href="speakup.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 
 <body>
     <form id="form1" runat="server">               
@@ -125,6 +126,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel-body">
+                                                    <div id="myfirstchart" style="height: 300px;"></div>
+                                                    <!--
                                                     <asp:Chart ID="Chart1" runat="server">
                                                         <Series>
                                                             <asp:Series Name="Series1"></asp:Series>
@@ -133,6 +136,7 @@
                                                             <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
                                                         </ChartAreas>
                                                     </asp:Chart>
+                                                    -->
                                                 </div>
                                             </div>
                                         </div>
@@ -262,6 +266,32 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+    <script>
+        new Morris.Bar({
+            // ID of the element in which to draw the chart.
+            element: 'myfirstchart',
+            // Chart data records -- each entry in this array corresponds to a point on
+            // the chart.
+            data: [
+                { year: '2008', value: 20 },
+                { year: '2009', value: 10 },
+                { year: '2010', value: 5 },
+                { year: '2011', value: 5 },
+                { year: '2012', value: 20 }
+            ],
+            // The name of the data record attribute that contains x-values.
+            xkey: 'year',
+            // A list of names of data record attributes that contain y-values.
+            ykeys: ['value'],
+            // Labels for the ykeys -- will be displayed when you hover over the
+            // chart.
+            labels: ['Value']
+        });
+    </script>
 
 </body>
 </html>
