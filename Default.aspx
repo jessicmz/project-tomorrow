@@ -102,7 +102,28 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
-                                                <div class="panel-heading">Panel heading without title</div>
+                                                <div class="panel-heading">
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i> Panel heading without title
+                                                    <div class="pull-right">
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                                                Actions
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu pull-right" role="menu">
+                                                                <li><a href="#">Action</a>
+                                                                </li>
+                                                                <li><a href="#">Another action</a>
+                                                                </li>
+                                                                <li><a href="#">Something else here</a>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#">Separated link</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="panel-body">
                                                     <asp:Chart ID="Chart1" runat="server">
                                                         <Series>
@@ -117,7 +138,28 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
-                                                <div class="panel-heading">Panel heading without title</div>
+                                                <div class="panel-heading">
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i> Panel heading without title
+                                                    <div class="pull-right">
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                                                Actions
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu pull-right" role="menu">
+                                                                <li><a href="#">Action</a>
+                                                                </li>
+                                                                <li><a href="#">Another action</a>
+                                                                </li>
+                                                                <li><a href="#">Something else here</a>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#">Separated link</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="panel-body">
                                                     <asp:Chart ID="Chart2" runat="server">
                                                         <Series>
@@ -135,7 +177,28 @@
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
-                                                <div class="panel-heading">Panel heading without title</div>
+                                                <div class="panel-heading">
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i> Panel heading without title
+                                                    <div class="pull-right">
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                                                Actions
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu pull-right" role="menu">
+                                                                <li><a href="#">Action</a>
+                                                                </li>
+                                                                <li><a href="#">Another action</a>
+                                                                </li>
+                                                                <li><a href="#">Something else here</a>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#">Separated link</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="panel-body">
                                                     <asp:Chart ID="Chart3" runat="server">
                                                         <Series>
@@ -150,7 +213,28 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
-                                                <div class="panel-heading">Panel heading without title</div>
+                                                <div class="panel-heading">
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i> Panel heading without title
+                                                    <div class="pull-right">
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                                                Actions
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu pull-right" role="menu">
+                                                                <li><a href="#">Action</a>
+                                                                </li>
+                                                                <li><a href="#">Another action</a>
+                                                                </li>
+                                                                <li><a href="#">Something else here</a>
+                                                                </li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#">Separated link</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="panel-body">
                                                     <asp:Chart ID="Chart4" runat="server">
                                                         <Series>
