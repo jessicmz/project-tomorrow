@@ -104,7 +104,7 @@
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <i class="fa fa-bar-chart-o fa-fw"></i> Panel heading without title
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i> National
                                                     <div class="pull-right">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -126,7 +126,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel-body">
-                                                    <div id="myfirstchart" style="height: 300px;"></div>
+                                                    <div id="national" style="height: 300px;"></div>
                                                     <!--
                                                     <asp:Chart ID="Chart1" runat="server">
                                                         <Series>
@@ -143,7 +143,7 @@
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <i class="fa fa-bar-chart-o fa-fw"></i> Panel heading without title
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i> State
                                                     <div class="pull-right">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -165,6 +165,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel-body">
+                                                    <div id="state" style="height: 300px;"></div>
+                                                    <!--
                                                     <asp:Chart ID="Chart2" runat="server">
                                                         <Series>
                                                             <asp:Series Name="Series1"></asp:Series>
@@ -173,6 +175,7 @@
                                                             <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
                                                         </ChartAreas>
                                                     </asp:Chart>
+                                                    -->
                                                 </div>
                                             </div>
                                         </div>
@@ -182,7 +185,7 @@
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <i class="fa fa-bar-chart-o fa-fw"></i> Panel heading without title
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i> District
                                                     <div class="pull-right">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -204,6 +207,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel-body">
+                                                    <div id="district" style="height: 300px;"></div>
+                                                    <!--
                                                     <asp:Chart ID="Chart3" runat="server">
                                                         <Series>
                                                             <asp:Series Name="Series1"></asp:Series>
@@ -212,13 +217,14 @@
                                                             <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
                                                         </ChartAreas>
                                                     </asp:Chart>
+                                                    -->
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <i class="fa fa-bar-chart-o fa-fw"></i> Panel heading without title
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i> Project Tomorrow
                                                     <div class="pull-right">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -240,6 +246,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel-body">
+                                                    <div id="projecttomorrow" style="height: 300px;"></div>
+                                                    <!--
                                                     <asp:Chart ID="Chart4" runat="server">
                                                         <Series>
                                                             <asp:Series Name="Series1"></asp:Series>
@@ -248,6 +256,7 @@
                                                             <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
                                                         </ChartAreas>
                                                     </asp:Chart>
+                                                    -->
                                                 </div>
                                             </div>
                                         </div>
@@ -273,7 +282,70 @@
     <script>
         new Morris.Bar({
             // ID of the element in which to draw the chart.
-            element: 'myfirstchart',
+            element: 'national',
+            // Chart data records -- each entry in this array corresponds to a point on
+            // the chart.
+            data: [
+                { year: '2008', value: 20 },
+                { year: '2009', value: 10 },
+                { year: '2010', value: 5 },
+                { year: '2011', value: 5 },
+                { year: '2012', value: 20 }
+            ],
+            // The name of the data record attribute that contains x-values.
+            xkey: 'year',
+            // A list of names of data record attributes that contain y-values.
+            ykeys: ['value'],
+            // Labels for the ykeys -- will be displayed when you hover over the
+            // chart.
+            labels: ['Value']
+        });
+
+        new Morris.Bar({
+            // ID of the element in which to draw the chart.
+            element: 'state',
+            // Chart data records -- each entry in this array corresponds to a point on
+            // the chart.
+            data: [
+                { year: '2008', value: 20 },
+                { year: '2009', value: 10 },
+                { year: '2010', value: 5 },
+                { year: '2011', value: 5 },
+                { year: '2012', value: 20 }
+            ],
+            // The name of the data record attribute that contains x-values.
+            xkey: 'year',
+            // A list of names of data record attributes that contain y-values.
+            ykeys: ['value'],
+            // Labels for the ykeys -- will be displayed when you hover over the
+            // chart.
+            labels: ['Value']
+        });
+
+        new Morris.Bar({
+            // ID of the element in which to draw the chart.
+            element: 'district',
+            // Chart data records -- each entry in this array corresponds to a point on
+            // the chart.
+            data: [
+                { year: '2008', value: 20 },
+                { year: '2009', value: 10 },
+                { year: '2010', value: 5 },
+                { year: '2011', value: 5 },
+                { year: '2012', value: 20 }
+            ],
+            // The name of the data record attribute that contains x-values.
+            xkey: 'year',
+            // A list of names of data record attributes that contain y-values.
+            ykeys: ['value'],
+            // Labels for the ykeys -- will be displayed when you hover over the
+            // chart.
+            labels: ['Value']
+        });
+
+        new Morris.Bar({
+            // ID of the element in which to draw the chart.
+            element: 'projecttomorrow',
             // Chart data records -- each entry in this array corresponds to a point on
             // the chart.
             data: [
