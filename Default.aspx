@@ -71,7 +71,7 @@
                                         <div class="col-sm-3">
                                             <div class="panel panel-default">
                                                 <div class="panel-body totalOpenQuestionsCss">
-                                                    <p class="metricsLabel">Total Responses</p>
+                                                    <p class="metricsLabel"># of Open Ended Questions</p>
                                                     <asp:Label ID="Label2" CssClass="metricsCss" runat="server" Text="Label"></asp:Label>
                                                 </div>
                                                 <div class="panel-footer surveyLinkCss">

@@ -66,9 +66,11 @@ public partial class _Default : System.Web.UI.Page
             objConn.Open();
             string str = "SELECT SurveyName FROM dbo.users_surveys WHERE SurveyName = 'Grades 3-5'";
             SqlCommand cmd = new SqlCommand(str, objConn);
+
+
             SqlDataReader reader = cmd.ExecuteReader();
             try
-            {
+            {   
                 reader.Read();
                 surveyname.Text = reader["SurveyName"].ToString();
             }
@@ -90,12 +92,21 @@ public partial class _Default : System.Web.UI.Page
         {
             objConn.Open();
             string str = "SELECT COUNT (Distinct question_text) FROM dbo.AllQuesOpt where survey_id = '7'";
+            string str2 = "SELECT COUNT (Distinct question_id) FROM dbo.AllQuesOpt where survey_id = '7'";
+            string str3 = "SELECT COUNT (Distinct question_id) FROM dbo.AllQuesOpt where survey_id = '7' and option_text = 'other'";
             SqlCommand cmd = new SqlCommand(str, objConn);
+            SqlCommand cmd2 = new SqlCommand(str2, objConn);
+            SqlCommand cmd3 = new SqlCommand(str3, objConn);
 
             try
             {
                 Int32 count = (Int32)cmd.ExecuteScalar();
                 questionMetrics.Text = Convert.ToString(count.ToString());
+                Int32 count2 = (Int32)cmd2.ExecuteScalar();
+                Label1.Text = Convert.ToString(count2.ToString());
+                Int32 count3 = (Int32)cmd3.ExecuteScalar();
+                Label2.Text = Convert.ToString(count3.ToString());
+
             }
             catch (SqlException err)
             {
