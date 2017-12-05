@@ -108,18 +108,15 @@
                                                     <div class="pull-right">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                                                Actions
+                                                                Graph Types
                                                                 <span class="caret"></span>
                                                             </button>
                                                             <ul class="dropdown-menu pull-right" role="menu">
-                                                                <li><a href="#">Action</a>
+                                                                <li><a href="#">Line</a>
                                                                 </li>
-                                                                <li><a href="#">Another action</a>
+                                                                <li><a href="#">Bar</a>
                                                                 </li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="#">Separated link</a>
+                                                                <li><a href="#">Donut</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -147,18 +144,15 @@
                                                     <div class="pull-right">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                                                Actions
+                                                                Graph Types
                                                                 <span class="caret"></span>
                                                             </button>
                                                             <ul class="dropdown-menu pull-right" role="menu">
-                                                                <li><a href="#">Action</a>
+                                                                <li><a href="#">Line</a>
                                                                 </li>
-                                                                <li><a href="#">Another action</a>
+                                                                <li><a href="#">Bar</a>
                                                                 </li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="#">Separated link</a>
+                                                                <li><a href="#">Donut</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -189,18 +183,15 @@
                                                     <div class="pull-right">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                                                Actions
+                                                                Graph Types
                                                                 <span class="caret"></span>
                                                             </button>
                                                             <ul class="dropdown-menu pull-right" role="menu">
-                                                                <li><a href="#">Action</a>
+                                                                <li><a href="#">Line</a>
                                                                 </li>
-                                                                <li><a href="#">Another action</a>
+                                                                <li><a href="#">Bar</a>
                                                                 </li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="#">Separated link</a>
+                                                                <li><a href="#">Donut</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -228,18 +219,15 @@
                                                     <div class="pull-right">
                                                         <div class="btn-group">
                                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                                                Actions
+                                                                Graph Types
                                                                 <span class="caret"></span>
                                                             </button>
                                                             <ul class="dropdown-menu pull-right" role="menu">
-                                                                <li><a href="#">Action</a>
+                                                                <li><a href="#">Line</a>
                                                                 </li>
-                                                                <li><a href="#">Another action</a>
+                                                                <li><a href="#">Bar</a>
                                                                 </li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="divider"></li>
-                                                                <li><a href="#">Separated link</a>
+                                                                <li><a href="#">Donut</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -280,6 +268,10 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 
     <script>
+        $('#demolist li').on('click', function () {
+            $('#datebox').val($(this).text());
+        });
+
         new Morris.Bar({
             // ID of the element in which to draw the chart.
             element: 'national',
