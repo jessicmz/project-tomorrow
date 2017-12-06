@@ -301,17 +301,9 @@
                         borderWidth: 0
                     },
                     series: [{
-                        name: 'test1',
+                        showInLegend: false,
+                        name: 'Project Tomorrow',
                         data: [1, 2, 3, 5]
-                    }, {
-                        name: 'test2',
-                        data: [6, 3, 9, 7]
-                    }, {
-                        name: 'test2',
-                        data: [10, 2, 3, 8]
-                    }, {
-                        name: 'test2',
-                        data: [1, 1, 2, 8]
                     }]
                 });
 
@@ -361,17 +353,9 @@
                         borderWidth: 0
                     },
                     series: [{
-                        name: 'test1',
-                        data: [1, 2, 3, 5]
-                    }, {
-                        name: 'test2',
+                        showInLegend: false,
+                        name: 'National',
                         data: [6, 3, 9, 7]
-                    }, {
-                        name: 'test2',
-                        data: [10, 2, 3, 8]
-                    }, {
-                        name: 'test2',
-                        data: [1, 1, 2, 8]
                     }]
                 });
 
@@ -421,17 +405,9 @@
                         borderWidth: 0
                     },
                     series: [{
-                        name: 'test1',
-                        data: [1, 2, 3, 5]
-                    }, {
-                        name: 'test2',
-                        data: [6, 3, 9, 7]
-                    }, {
-                        name: 'test2',
+                        showInLegend: false,
+                        name: 'State',
                         data: [10, 2, 3, 8]
-                    }, {
-                        name: 'test2',
-                        data: [1, 1, 2, 8]
                     }]
                 });
 
@@ -481,17 +457,14 @@
                         borderWidth: 0
                     },
                     series: [{
-                        name: 'test1',
+                        name: 'Project Tomorrow',
                         data: [1, 2, 3, 5]
                     }, {
-                        name: 'test2',
+                        name: 'National',
                         data: [6, 3, 9, 7]
                     }, {
-                        name: 'test2',
+                        name: 'State',
                         data: [10, 2, 3, 8]
-                    }, {
-                        name: 'test2',
-                        data: [1, 1, 2, 8]
                     }]
                 });
             });
