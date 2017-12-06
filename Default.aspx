@@ -29,7 +29,7 @@
                                 <div class="navbar-header">
                                     <a class="navbar-brand" href="#">Project Tomorrow</a>
                                 </div>
-                                <ul class="nav navbar-nav">
+                                <ul class="nav navbar-nav pull-right">
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#">Surveys</a></li>
                                     <li><a href="#">Logout</a></li>
@@ -104,26 +104,30 @@
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <i class="fa fa-bar-chart-o fa-fw"></i> National
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i>Project Tomorrow
                                                     <div class="pull-right">
                                                         <div class="btn-group">
+                                                            <select id="projectTomorrowChartType">
+                                                                <option value="0">-select chart type-</option>  
+                                                                <option value="line">line</option>
+                                                                <option value="column">column</option>
+                                                            </select>
+                                                            <!--
                                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
                                                                 Graph Types
                                                                 <span class="caret"></span>
                                                             </button>
                                                             <ul class="dropdown-menu pull-right" role="menu">
-                                                                <li><a href="#">Line</a>
-                                                                </li>
-                                                                <li><a href="#">Bar</a>
-                                                                </li>
-                                                                <li><a href="#">Donut</a>
-                                                                </li>
+                                                                <li><a href="#">Line</a></li>
+                                                                <li><a href="#">Bar</a></li>
+                                                                <li><a href="#">Donut</a></li>
                                                             </ul>
+                                                            -->
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="panel-body">
-                                                    <div id="national" style="height: 300px;"></div>
+                                                    <div id="ProjectTomorrow" style="height: 300px"  class="ChartBox" ></div>
                                                     <!--
                                                     <asp:Chart ID="Chart1" runat="server">
                                                         <Series>
@@ -140,26 +144,19 @@
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <i class="fa fa-bar-chart-o fa-fw"></i> State
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i>National Percentages
                                                     <div class="pull-right">
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                                                Graph Types
-                                                                <span class="caret"></span>
-                                                            </button>
-                                                            <ul class="dropdown-menu pull-right" role="menu">
-                                                                <li><a href="#">Line</a>
-                                                                </li>
-                                                                <li><a href="#">Bar</a>
-                                                                </li>
-                                                                <li><a href="#">Donut</a>
-                                                                </li>
-                                                            </ul>
+                                                            <select id="nationalChartType">
+                                                                <option value="0">-select chart type-</option>  
+                                                                <option value="line">line</option>
+                                                                <option value="column">column</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="panel-body">
-                                                    <div id="state" style="height: 300px;"></div>
+                                                    <div id="National" style="height: 300px"  class="ChartBox" ></div>
                                                     <!--
                                                     <asp:Chart ID="Chart2" runat="server">
                                                         <Series>
@@ -179,26 +176,19 @@
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <i class="fa fa-bar-chart-o fa-fw"></i> District
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i>State Percentages
                                                     <div class="pull-right">
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                                                Graph Types
-                                                                <span class="caret"></span>
-                                                            </button>
-                                                            <ul class="dropdown-menu pull-right" role="menu">
-                                                                <li><a href="#">Line</a>
-                                                                </li>
-                                                                <li><a href="#">Bar</a>
-                                                                </li>
-                                                                <li><a href="#">Donut</a>
-                                                                </li>
-                                                            </ul>
+                                                            <select id="stateChartType">
+                                                                <option value="0">-select chart type-</option>  
+                                                                <option value="line">line</option>
+                                                                <option value="column">column</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="panel-body">
-                                                    <div id="district" style="height: 300px;"></div>
+                                                    <div id="State" style="height: 300px"  class="ChartBox" ></div>
                                                     <!--
                                                     <asp:Chart ID="Chart3" runat="server">
                                                         <Series>
@@ -215,26 +205,19 @@
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <i class="fa fa-bar-chart-o fa-fw"></i> Project Tomorrow
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i>Percentage Comparison
                                                     <div class="pull-right">
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                                                Graph Types
-                                                                <span class="caret"></span>
-                                                            </button>
-                                                            <ul class="dropdown-menu pull-right" role="menu">
-                                                                <li><a href="#">Line</a>
-                                                                </li>
-                                                                <li><a href="#">Bar</a>
-                                                                </li>
-                                                                <li><a href="#">Donut</a>
-                                                                </li>
-                                                            </ul>
+                                                            <select id="comparisonChartType">
+                                                                <option value="0">-select chart type-</option>  
+                                                                <option value="line">line</option>
+                                                                <option value="column">column</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="panel-body">
-                                                    <div id="projecttomorrow" style="height: 300px;"></div>
+                                                    <div id="Comparison" style="height: 300px"  class="ChartBox" ></div>
                                                     <!--
                                                     <asp:Chart ID="Chart4" runat="server">
                                                         <Series>
@@ -266,94 +249,304 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
 
     <script>
-        $('#demolist li').on('click', function () {
-            $('#datebox').val($(this).text());
-        });
+        $(document).ready(function () {
+            $(function () {
+                var projecttomorrow = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'ProjectTomorrow',
+                        type: 'column'
+                    },
+                    plotOptions: {
+                        series: {
+                            cursor: 'pointer'
+                        },
+                    },
+                    title: {
+                        text: '',
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    subtitle: {
+                        text: '',
+                    },
+                    xAxis: {
+                        categories: ['test1', 'test2', 'test3', 'test4']
+                    },
+                    yAxis: {
+                        min: 0,
+                        max: 12,
+                        tickInterval: 4,
+                        title: {
+                            text: 'Applications'
+                        },
+                        plotLines: [{
+                            value: 0,
+                            width: 1,
+                            color: '#808080'
+                        }]
+                    },
 
-        new Morris.Bar({
-            // ID of the element in which to draw the chart.
-            element: 'national',
-            // Chart data records -- each entry in this array corresponds to a point on
-            // the chart.
-            data: [
-                { year: '2008', value: 20 },
-                { year: '2009', value: 10 },
-                { year: '2010', value: 5 },
-                { year: '2011', value: 5 },
-                { year: '2012', value: 20 }
-            ],
-            // The name of the data record attribute that contains x-values.
-            xkey: 'year',
-            // A list of names of data record attributes that contain y-values.
-            ykeys: ['value'],
-            // Labels for the ykeys -- will be displayed when you hover over the
-            // chart.
-            labels: ['Value']
-        });
+                    legend: {
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'middle',
+                        borderWidth: 0
+                    },
+                    series: [{
+                        name: 'test1',
+                        data: [1, 2, 3, 5]
+                    }, {
+                        name: 'test2',
+                        data: [6, 3, 9, 7]
+                    }, {
+                        name: 'test2',
+                        data: [10, 2, 3, 8]
+                    }, {
+                        name: 'test2',
+                        data: [1, 1, 2, 8]
+                    }]
+                });
 
-        new Morris.Bar({
-            // ID of the element in which to draw the chart.
-            element: 'state',
-            // Chart data records -- each entry in this array corresponds to a point on
-            // the chart.
-            data: [
-                { year: '2008', value: 20 },
-                { year: '2009', value: 10 },
-                { year: '2010', value: 5 },
-                { year: '2011', value: 5 },
-                { year: '2012', value: 20 }
-            ],
-            // The name of the data record attribute that contains x-values.
-            xkey: 'year',
-            // A list of names of data record attributes that contain y-values.
-            ykeys: ['value'],
-            // Labels for the ykeys -- will be displayed when you hover over the
-            // chart.
-            labels: ['Value']
-        });
+                var national = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'National',
+                        type: 'column'
+                    },
+                    plotOptions: {
+                        series: {
+                            cursor: 'pointer'
+                        },
+                    },
+                    title: {
+                        text: '',
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    subtitle: {
+                        text: '',
+                    },
+                    xAxis: {
+                        categories: ['test1', 'test2', 'test3', 'test4']
+                    },
+                    yAxis: {
+                        min: 0,
+                        max: 12,
+                        tickInterval: 4,
+                        title: {
+                            text: 'Applications'
+                        },
+                        plotLines: [{
+                            value: 0,
+                            width: 1,
+                            color: '#808080'
+                        }]
+                    },
 
-        new Morris.Bar({
-            // ID of the element in which to draw the chart.
-            element: 'district',
-            // Chart data records -- each entry in this array corresponds to a point on
-            // the chart.
-            data: [
-                { year: '2008', value: 20 },
-                { year: '2009', value: 10 },
-                { year: '2010', value: 5 },
-                { year: '2011', value: 5 },
-                { year: '2012', value: 20 }
-            ],
-            // The name of the data record attribute that contains x-values.
-            xkey: 'year',
-            // A list of names of data record attributes that contain y-values.
-            ykeys: ['value'],
-            // Labels for the ykeys -- will be displayed when you hover over the
-            // chart.
-            labels: ['Value']
-        });
+                    legend: {
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'middle',
+                        borderWidth: 0
+                    },
+                    series: [{
+                        name: 'test1',
+                        data: [1, 2, 3, 5]
+                    }, {
+                        name: 'test2',
+                        data: [6, 3, 9, 7]
+                    }, {
+                        name: 'test2',
+                        data: [10, 2, 3, 8]
+                    }, {
+                        name: 'test2',
+                        data: [1, 1, 2, 8]
+                    }]
+                });
 
-        new Morris.Bar({
-            // ID of the element in which to draw the chart.
-            element: 'projecttomorrow',
-            // Chart data records -- each entry in this array corresponds to a point on
-            // the chart.
-            data: [
-                { year: '2008', value: 20 },
-                { year: '2009', value: 10 },
-                { year: '2010', value: 5 },
-                { year: '2011', value: 5 },
-                { year: '2012', value: 20 }
-            ],
-            // The name of the data record attribute that contains x-values.
-            xkey: 'year',
-            // A list of names of data record attributes that contain y-values.
-            ykeys: ['value'],
-            // Labels for the ykeys -- will be displayed when you hover over the
-            // chart.
-            labels: ['Value']
+                var state = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'State',
+                        type: 'column'
+                    },
+                    plotOptions: {
+                        series: {
+                            cursor: 'pointer'
+                        },
+                    },
+                    title: {
+                        text: '',
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    subtitle: {
+                        text: '',
+                    },
+                    xAxis: {
+                        categories: ['test1', 'test2', 'test3', 'test4']
+                    },
+                    yAxis: {
+                        min: 0,
+                        max: 12,
+                        tickInterval: 4,
+                        title: {
+                            text: 'Applications'
+                        },
+                        plotLines: [{
+                            value: 0,
+                            width: 1,
+                            color: '#808080'
+                        }]
+                    },
+
+                    legend: {
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'middle',
+                        borderWidth: 0
+                    },
+                    series: [{
+                        name: 'test1',
+                        data: [1, 2, 3, 5]
+                    }, {
+                        name: 'test2',
+                        data: [6, 3, 9, 7]
+                    }, {
+                        name: 'test2',
+                        data: [10, 2, 3, 8]
+                    }, {
+                        name: 'test2',
+                        data: [1, 1, 2, 8]
+                    }]
+                });
+
+                var comparison = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'Comparison',
+                        type: 'column'
+                    },
+                    plotOptions: {
+                        series: {
+                            cursor: 'pointer'
+                        },
+                    },
+                    title: {
+                        text: '',
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    subtitle: {
+                        text: '',
+                    },
+                    xAxis: {
+                        categories: ['test1', 'test2', 'test3', 'test4']
+                    },
+                    yAxis: {
+                        min: 0,
+                        max: 12,
+                        tickInterval: 4,
+                        title: {
+                            text: 'Applications'
+                        },
+                        plotLines: [{
+                            value: 0,
+                            width: 1,
+                            color: '#808080'
+                        }]
+                    },
+
+                    legend: {
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'middle',
+                        borderWidth: 0
+                    },
+                    series: [{
+                        name: 'test1',
+                        data: [1, 2, 3, 5]
+                    }, {
+                        name: 'test2',
+                        data: [6, 3, 9, 7]
+                    }, {
+                        name: 'test2',
+                        data: [10, 2, 3, 8]
+                    }, {
+                        name: 'test2',
+                        data: [1, 1, 2, 8]
+                    }]
+                });
+            });
+
+            $("#projectTomorrowChartType").change(function () {
+                var type = this.value;
+                if (type !== '0') {
+                    var pt = $('#ProjectTomorrow').highcharts();
+                    $(pt.series).each(function () {
+                        this.update({
+                            type: type
+                        }, false);
+                    });
+                    pt.redraw();
+                }
+            });
+
+            $("#nationalChartType").change(function () {
+                var type = this.value;
+                if (type !== '0') {
+                    var nat = $('#National').highcharts();
+                    $(nat.series).each(function () {
+                        this.update({
+                            type: type
+                        }, false);
+                    });
+                    nat.redraw();
+                }
+            });
+
+            $("#stateChartType").change(function () {
+                var type = this.value;
+                if (type !== '0') {
+                    var sta = $('#State').highcharts();
+                    $(sta.series).each(function () {
+                        this.update({
+                            type: type
+                        }, false);
+                    });
+                    sta.redraw();
+                }
+            });
+
+            $("#comparisonChartType").change(function () {
+                var type = this.value;
+                if (type !== '0') {
+                    var com = $('#Comparison').highcharts();
+                    $(com.series).each(function () {
+                        this.update({
+                            type: type
+                        }, false);
+                    });
+                    com.redraw();
+                }
+            });
         });
     </script>
 
