@@ -278,14 +278,14 @@
                         text: '',
                     },
                     xAxis: {
-                        categories: ['test1', 'test2', 'test3', 'test4']
+                        categories: ['Grade 3', 'Grade 4', 'Grade 5']
                     },
                     yAxis: {
                         min: 0,
                         max: 12,
                         tickInterval: 4,
                         title: {
-                            text: 'Applications'
+                            text: 'Responses'
                         },
                         plotLines: [{
                             value: 0,
@@ -303,7 +303,7 @@
                     series: [{
                         showInLegend: false,
                         name: 'Project Tomorrow',
-                        data: [1, 2, 3, 5]
+                        data: [1, 2, 3]
                     }]
                 });
 
@@ -330,14 +330,14 @@
                         text: '',
                     },
                     xAxis: {
-                        categories: ['test1', 'test2', 'test3', 'test4']
+                        categories: ['Grade 3', 'Grade 4', 'Grade 5']
                     },
                     yAxis: {
                         min: 0,
                         max: 12,
                         tickInterval: 4,
                         title: {
-                            text: 'Applications'
+                            text: 'Responses'
                         },
                         plotLines: [{
                             value: 0,
@@ -355,7 +355,7 @@
                     series: [{
                         showInLegend: false,
                         name: 'National',
-                        data: [6, 3, 9, 7]
+                        data: [6, 3, 9]
                     }]
                 });
 
@@ -382,14 +382,14 @@
                         text: '',
                     },
                     xAxis: {
-                        categories: ['test1', 'test2', 'test3', 'test4']
+                        categories: ['Grade 3', 'Grade 4', 'Grade 5']
                     },
                     yAxis: {
                         min: 0,
                         max: 12,
                         tickInterval: 4,
                         title: {
-                            text: 'Applications'
+                            text: 'Responses'
                         },
                         plotLines: [{
                             value: 0,
@@ -407,7 +407,7 @@
                     series: [{
                         showInLegend: false,
                         name: 'State',
-                        data: [10, 2, 3, 8]
+                        data: [10, 2, 3]
                     }]
                 });
 
@@ -434,14 +434,14 @@
                         text: '',
                     },
                     xAxis: {
-                        categories: ['test1', 'test2', 'test3', 'test4']
+                        categories: ['Grade 3', 'Grade 4', 'Grade 5']
                     },
                     yAxis: {
                         min: 0,
                         max: 12,
                         tickInterval: 4,
                         title: {
-                            text: 'Applications'
+                            text: 'Responses'
                         },
                         plotLines: [{
                             value: 0,
@@ -454,17 +454,22 @@
                         layout: 'vertical',
                         align: 'right',
                         verticalAlign: 'middle',
-                        borderWidth: 0
+                        borderWidth: 0,
+                        labelFormatter: function () {
+                            var legendName = this.name;
+                            var match = legendName.match(/.{1,10}/g);
+                            return match.toString().replace(/\,/g, "<br/>");
+                        }
                     },
                     series: [{
                         name: 'Project Tomorrow',
-                        data: [1, 2, 3, 5]
+                        data: [1, 2, 3]
                     }, {
                         name: 'National',
-                        data: [6, 3, 9, 7]
+                        data: [6, 3, 9]
                     }, {
                         name: 'State',
-                        data: [10, 2, 3, 8]
+                        data: [10, 2, 3]
                     }]
                 });
             });
