@@ -42,7 +42,7 @@
                                 <asp:Label ID="surveyname" runat="server" Text="Label"></asp:Label>
                                 <small>Dashboard</small></h1>
                             <i class="fa fa-download" style="font-size:28px"></i> 
-                            <a href="#">Download Survey Data</a>
+                            <a href="DIST25669-55.xls">Download Survey Data</a>
                         </div>
                         <div class="contentBackground">
                             <div class="contents">
@@ -64,7 +64,7 @@
 
                                                 <div class="panel-footer surveyLinkCss">
 
-                                                    <a href="url">link text</a>
+                                                    <a href="url">View Details</a>
 
                                                 </div>
 
@@ -88,7 +88,7 @@
 
                                                 <div class="panel-footer surveyLinkCss">
 
-                                                    <a href="url">link text</a>
+                                                    <a href="url">View Details</a>
 
                                                 </div>
 
@@ -112,7 +112,7 @@
 
                                                 <div class="panel-footer surveyLinkCss">
 
-                                                    <a href="url">link text</a>
+                                                    <a href="url">View Details</a>
 
                                                 </div>
 
@@ -136,7 +136,7 @@
 
                                                 <div class="panel-footer surveyLinkCss">
 
-                                                    <a href="url">link text</a>
+                                                    <a href="url">View Details</a>
 
                                                 </div>
 
@@ -157,13 +157,13 @@
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <i class="fa fa-bar-chart-o fa-fw"></i>Project Tomorrow
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i> Project Tomorrow
                                                     <div class="pull-right">
                                                         <div class="btn-group">
                                                             <select id="projectTomorrowChartType">
-                                                                <option value="0">-select chart type-</option>  
-                                                                <option value="line">line</option>
-                                                                <option value="column">column</option>
+                                                                <option value="0">Chart Type</option>  
+                                                                <option value="line">Line</option>
+                                                                <option value="column">Column</option>
                                                             </select>
                                                             <!--
                                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -197,13 +197,13 @@
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <i class="fa fa-bar-chart-o fa-fw"></i>National Percentages
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i> National Percentages
                                                     <div class="pull-right">
                                                         <div class="btn-group">
                                                             <select id="nationalChartType">
-                                                                <option value="0">-select chart type-</option>  
-                                                                <option value="line">line</option>
-                                                                <option value="column">column</option>
+                                                                <option value="0">Chart Type</option>  
+                                                                <option value="line">Line</option>
+                                                                <option value="column">Column</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -229,13 +229,13 @@
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <i class="fa fa-bar-chart-o fa-fw"></i>State Percentages
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i> State Percentages
                                                     <div class="pull-right">
                                                         <div class="btn-group">
                                                             <select id="stateChartType">
-                                                                <option value="0">-select chart type-</option>  
-                                                                <option value="line">line</option>
-                                                                <option value="column">column</option>
+                                                                <option value="0">Chart Type</option>  
+                                                                <option value="line">Line</option>
+                                                                <option value="column">Column</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -258,13 +258,13 @@
                                         <div class="col-sm-6">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
-                                                    <i class="fa fa-bar-chart-o fa-fw"></i>Percentage Comparison
+                                                    <i class="fa fa-bar-chart-o fa-fw"></i> Percentage Comparison
                                                     <div class="pull-right">
                                                         <div class="btn-group">
                                                             <select id="comparisonChartType">
-                                                                <option value="0">-select chart type-</option>  
-                                                                <option value="line">line</option>
-                                                                <option value="column">column</option>
+                                                                <option value="0">Chart Type</option>  
+                                                                <option value="line">Line</option>
+                                                                <option value="column">Column</option>
                                                             </select>
                                                         </div>
                                                     </div>
